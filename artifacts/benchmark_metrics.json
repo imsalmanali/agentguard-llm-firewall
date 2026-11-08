@@ -1,0 +1,37 @@
+{
+  "model_name": "AgentGuard-PromptInjection-v1",
+  "dataset_samples": 3000,
+  "test_samples": 600,
+  "metrics": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "roc_auc": 1.0,
+    "pr_auc": 1.0,
+    "confusion_matrix": [
+      [
+        300,
+        0
+      ],
+      [
+        0,
+        300
+      ]
+    ]
+  },
+  "latency_benchmarks_ms": {
+    "average": 4.021,
+    "median_p50": 3.332,
+    "percentile_p95": 7.214,
+    "percentile_p99": 28.913
+  },
+  "category_distribution": {
+    "BENIGN_QUERY": 1500,
+    "PROMPT_INJECTION_INDIRECT": 300,
+    "OBFUSCATED_ATTACK": 300,
+    "SYSTEM_LEAK_PROBE": 300,
+    "MALICIOUS_TOOL_HIJACK": 300,
+    "PROMPT_INJECTION_DIRECT": 300
+  }
+}
